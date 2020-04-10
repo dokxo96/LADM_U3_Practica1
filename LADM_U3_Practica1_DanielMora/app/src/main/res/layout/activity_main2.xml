@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".Main2Activity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ID_ACTIVIDAD:"
+            android:textSize="20sp" />
+
+        <TextView
+
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:text="TextView"
+            android:textSize="15sp" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/txtDescrip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Descripcion:"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/txtFechaCa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fecha Captura:"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/txtFechaEn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fecha Entrega:"
+        android:textSize="20sp" />
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+
+            <Button
+                android:id="@+id/btnBuscarEvi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="buscar" />
+
+            <Button
+                android:id="@+id/btnAgregarEvi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Agregar" />
+        </LinearLayout>
+
+
+
+    <ListView
+        android:id="@+id/ListaEvidencias"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+    </ListView>
+
+</LinearLayout>
